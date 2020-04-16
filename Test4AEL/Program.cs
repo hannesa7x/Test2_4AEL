@@ -7,9 +7,24 @@ namespace Test4AEL
     class Program
     {
         static void Main(string[] args)
-        {           
-            Console.WriteLine("Hello World!");
+        {
+            Titel("Das ist ein Test");
             Console.ReadLine();
+        }
+
+        static void Titel(string titel)
+        {
+            Console.Clear();
+            for (int i = 0; i < Console.WindowWidth; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine(titel);
+            for (int i = 0; i < Console.WindowWidth; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
         }
     }
 }
