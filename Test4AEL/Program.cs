@@ -14,10 +14,16 @@ namespace Test4AEL
 
         static void Titel(string titel)
         {
+            int laengeWindow = Console.WindowWidth;
+            int laengeTitel = titel.Length;
             Console.Clear();
             for (int i = 0; i < Console.WindowWidth; i++)
             {
                 Console.Write("*");
+            }
+            for (int i = 0; i < (laengeWindow-laengeTitel)/2; i++)
+            {
+                Console.Write(" ");
             }
             Console.WriteLine(titel);
             for (int i = 0; i < Console.WindowWidth; i++)
